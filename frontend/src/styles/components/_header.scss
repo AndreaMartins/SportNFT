@@ -1,0 +1,9 @@
+@use '../base' as *;
+
+.header {
+  background-color: $clr-neutral-dark;
+  color: $clr-neutral-light;
+  & h3 {
+    color: $clr-neutral-light;
+  }
+}
