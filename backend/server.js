@@ -1,10 +1,18 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
+import connectDB from './config/db.js';
+import competitors from './data/competitors.js';
+import competitorRoutes from './routes/competitorRoutes.js';
 
 dotenv.config();
+connectDB();
 const app = express();
+app.use(express.json());
+
 const __dirname = path.resolve();
+
+app.use('/api/competitors', competitorRoutes);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')));
