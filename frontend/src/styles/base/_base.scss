@@ -1,0 +1,11 @@
+// BASE
+body {
+  font-family: var(--body-font-family);
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
