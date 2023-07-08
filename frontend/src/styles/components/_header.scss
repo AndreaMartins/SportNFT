@@ -6,4 +6,9 @@
   & h3 {
     color: $clr-neutral-light;
   }
+
+  & button {
+    background-color: transparent;
+    color: $clr-neutral-light;
+  }
 }
