@@ -1,0 +1,14 @@
+@use '../base' as *;
+
+.hero {
+  background-image: url('../../assets/hero.jpg');
+  background-position: center;
+  align-self: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+
+  & .data {
+    color: $clr-neutral-light;
+    margin-top: 5rem;
+  }
+}

@@ -9,3 +9,12 @@ main {
   display: grid;
   grid-template-rows: 1fr min-content;
 }
+
+.image {
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}

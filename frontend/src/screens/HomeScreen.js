@@ -27,7 +27,7 @@ const HomeScreen = () => {
   return (
     <section className="home mt-5">
       <Container fluid>
-        <h2 className="mb-3">Federation / Institution</h2>
+        <h2 className="mb-3">Federation/Entity</h2>
         <Table>
           <thead>
             <tr>
@@ -48,7 +48,14 @@ const HomeScreen = () => {
                     variant="success"
                     onClick={() => mintNFT(competitor._id)}
                   >
-                    mintNFT
+                    MINT
+                  </Button>
+                  <Button
+                    className="ms-2"
+                    variant="primary"
+                    onClick={() => mintNFT(competitor._id)}
+                  >
+                    UPDATE
                   </Button>
                 </td>
               </tr>
